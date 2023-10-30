@@ -12,7 +12,19 @@ scrollButton.addEventListener("click", () => {
 });
 
 function playBackgroundMusic() {
+  backgroundMusic.currentTime = 80;
+  backgroundMusic.volume = 0;
   backgroundMusic.play();
+
+  var volume = 0;
+  var fadeInterval = setInterval(function () {
+    if (volume < 1) {
+      volume += 0.1; // Menambah volume secara bertahap
+      backgroundMusic.volume = volume;
+    } else {
+      clearInterval(fadeInterval); // Hentikan interval saat mencapai volume maksimal
+    }
+  }, 200); // Interval setiap 200ms (perubahan volume)
 }
 
 function scrollToElement(element, duration) {
