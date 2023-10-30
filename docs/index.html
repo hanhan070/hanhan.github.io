@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hanifah & Nita</title>
-    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="dist/output.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
     />
   </head>
   <body
-    class="h-[10000px] overflow-hidden scroll-smooth"
+    class="overflow-auto scroll-smooth bg-green-300 text-gray-500"
     style="font-family: 'Poppins', sans-serif"
   >
     <audio
@@ -22,105 +22,214 @@
       src="BETRAYER    Bendera Kuning  taken from 04 albums on 2004)   YouTube [240p].mp3"
       preload="auto"
     ></audio>
-    <div
-      class="w-full h-screen flex justify-center items-center flex-col space-y-10"
-    >
-      <div
-        style="font-family: 'Dancing Script', cursive"
-        class="text-6xl font-bold"
-      >
-        Hanifah & Nita
-      </div>
-      <button
-        id="scrollButton"
-        class="w-40 h-12 bg-[#88FFD1] rounded-lg hover:bg-pink-500 hover:text-white duration-300 ease-in-out"
-      >
-        Buka Undangan
-      </button>
-    </div>
 
-    <div
-      id="yoga"
-      class="w-full py-12 px-3 sm:px-0 bg-green-200 flex justify-center items-center"
-    >
+    <div class="w-full flex flex-col justify-center items-center">
       <div
-        class="sm:w-4/6 w-full py-10 bg-white rounded-3xl shadow-2xl flex justify-center items-center flex-col"
+        class="w-[400px] h-screen flex justify-center bg-white items-center flex-col space-y-6 "
       >
-        <h1
-          style="font-family: 'Dancing Script', cursive"
-          class="font-bold lg:text-6xl md:text-5xl text-4xl mb-2"
-        >
-          Hanifah Rupjanahnur
-        </h1>
-        <h2>Putra dari Bpk Ma'rup (Alm)</h2>
-        <h2>& Ibu Ikah (Alm)</h2>
-
-        <p
-          style="font-family: 'Dancing Script', cursive"
-          class="font-bold lg:text-6xl text-4xl my-6"
-        >
-          &
-        </p>
-        <h1
-          style="font-family: 'Dancing Script', cursive"
-          class="font-bold lg:text-6xl md:text-5xl text-4xl mb-2"
-        >
-          Nita Royani
-        </h1>
-        <h2>Putri dari Bpk Nana Sahroni (Alm)</h2>
-        <h2>& Ibu Nunung Nurhayati</h2>
-      </div>
-    </div>
-
-    <div
-      id="event"
-      class="w-full h-[2100px] px-3 sm:px-0 pb-10 bg-green-200 flex justify-center items-center"
-    >
-      <div
-        class="sm:w-4/6 w-full h-[1500px] px-6 md:px-16 bg-white rounded-3xl shadow-2xl flex justify-center items-center flex-col"
-      >
-        <p class="text-center mb-10">
-          Dengan memohon Rahmat dan Ridho Allah SWT, kami
-          mengundangBapak/Ibu/Saudara/i, untuk menghadiri resepsi pernikahan
-          putra-putri kami
-        </p>
-        <h1 class="font-bold text-4xl italic">Akad Nikah</h1>
+        <div class="text-gray-500 text-xl">THE WEDDING</div>
         <div
-          class="sm:w-4/6 w-full h-52 border flex flex-col justify-center px-3 ring-1 ring-pink-400 rounded-3xl shadow-xl mt-10"
+          style="font-family: 'Dancing Script', cursive"
+          class="text-5xl font-bold text-gray-500"
         >
-          <p>Sabru, 07 November 2023</p>
-          <p>Pukul 09.00 s.d Selesai</p>
-          <p>Kp. Maniis RT 04 RW 06 Desa Cisalak Kab. Subang</p>
+          Hanifah & Nita
         </div>
-        <h1 class="mt-20 font-bold text-4xl italic">Resepsi</h1>
-        <div
-          class="sm:w-4/6 w-full h-[800px] border flex flex-col justify-center px-3 ring-1 ring-pink-400 rounded-3xl shadow-xl mt-10"
+        <div class="text-gray-500">07.11.2023</div>
+
+        <!-- countdown -->
+        <div id="countdown" class="flex space-x-3">
+          <div
+            class="text-xs bg-green-400 opacity-70 rounded-md text-black py-2 w-[48px] h-[60px] p-[20px] flex flex-col items-center justify-center"
+          >
+            <span id="days" class="mr-1 text-base">0</span> <span>hari</span>
+          </div>
+          <div
+            class="text-xs bg-green-400 opacity-70 rounded-md text-black py-2 w-[48px] h-[60px] p-[20px] flex flex-col items-center justify-center"
+          >
+            <span id="hours" class="mr-1 text-base">0</span> <span>jam</span>
+          </div>
+          <div
+            class="text-xs bg-green-400 opacity-70 rounded-md text-black py-2 w-[48px] h-[60px] p-[20px] flex flex-col items-center justify-center"
+          >
+            <span id="minutes" class="mr-1 text-base">0</span>
+            <span>menit</span>
+          </div>
+          <div
+            class="text-xs bg-green-400 opacity-70 rounded-md text-black py-2 w-[48px] h-[60px] p-[20px] flex flex-col items-center justify-center"
+          >
+            <span id="seconds" class="mr-1 text-base">0</span>
+            <span>detik</span>
+          </div>
+        </div>
+        <button
+          id="scrollButton"
+          class="mt-10 w-40 h-12 bg-blue-500 rounded-lg hover:bg-pink-500 text-white duration-300 ease-in-out"
         >
-          <p>Sabru, 07 November 2023</p>
-          <p>Pukul 09.00 s.d Selesai</p>
-          <p>Kp. Maniis RT 04 RW 06 Desa Cisalak Kab. Subang</p>
-          <div class="flex justify-center flex-col items-center w-full mt-10">
-            <iframe
-              class="rounded-2xl sm:w-4/5 w-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24789.163756878243!2d107.7849426119966!3d-6.725663980192885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69273e91fd61fd%3A0xf96f0b85cb9eb60a!2sWarung%20Nasi%20Nusa%20Sari!5e0!3m2!1sen!2sid!4v1696953413502!5m2!1sen!2sid"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <a
-              href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24789.163756878243!2d107.7849426119966!3d-6.725663980192885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69273e91fd61fd%3A0xf96f0b85cb9eb60a!2sWarung%20Nasi%20Nusa%20Sari!5e0!3m2!1sen!2sid!4v1696953413502!5m2!1sen!2sid"
-              ><button
-                class="px-10 py-2 bg-orange-500 mt-7 font-semibold rounded-lg hover:text-white hover:bg-blue-400 duration-200 ease-in-out"
-              >
-                Buka Map
-              </button></a
+          Buka Undangan
+        </button>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-col justify-center items-center">
+      <div class="w-[400px]" id="yoga">
+        <div
+          style="background-image: url(cf9958e13bb6673a9191049b8767ad32.jpg)"
+          class="w-full h-[600px] flex flex-col justify-center items-center bg-center bg-cover px-4"
+        >
+        <p class="font-bold text-black">Ar-Rum:21</p>
+          <p class="text-center text-sm text-black p-[20px] pt-[50px]">
+            Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+            pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+            dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
+            kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
+            terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+          </p>
+       
+        </div>
+
+        <div
+          class="w-full px-[10px] bg-white flex flex-col justify-center items-center rounded-b-xl"
+        >
+          <div class="w-full bg-white flex flex-col px-[10px] pb-20 ">
+            <div
+              style="
+                background-image: url(WhatsApp\ Image\ 2023-10-11\ at\ 10.24.10_afdce385.jpg);
+              "
+              class="w-[252px] h-[360px] bg-red-300 bg-center bg-contain mt-[-70px] shadow-md"
+            ></div>
+            <h1
+              style="font-family: 'Dancing Script', cursive"
+              class="font-bold text-4xl mb-4 mt-8"
             >
+              Hanifah Rupjanahnur
+            </h1>
+            <div>
+              <h2 class="text-sm italic">Putra ke-4 dari</h2>
+              <h2 class="text-sm italic">Bpk Ma'rup (Alm) & Ibu Ikah (Alm)</h2>
+            </div>
+
+            <div class="flex flex-col items-end mt-12">
+              <div
+                style="
+                  background-image: url(WhatsApp\ Image\ 2023-10-11\ at\ 10.24.10_f182525d.jpg);
+                "
+                class="w-[252px] h-[360px] bg-black bg-center bg-contain shadow-md"
+              ></div>
+              <h1
+                style="font-family: 'Dancing Script', cursive"
+                class="font-bold text-4xl mb-4 mt-8"
+              >
+                Nita Royani
+              </h1>
+              <h2 class="text-sm italic">Putri Pertama dari</h2>
+              <h2 class="text-sm italic">
+                Bpk Nana Sahroni (Alm) &
+              </h2>
+              <h2 class="text-sm italic">
+                Ibu Nunung Nurhayati
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div id="event" class="w-full bg-transparent pt-5">
+          <div
+            class="w-full bg-white shadow-2xl flex justify-center items-center flex-col rounded-xl py-10"
+          >
+
+     
+        
+            <p class="text-center mt-7 mb-10 text-[12pt] px-10">
+              Dengan memohon Rahmat dan Ridho Allah SWT, kami
+              mengundang Bapak/Ibu/Saudara/i, untuk menghadiri resepsi pernikahan
+              putra-putri kami
+            </p>
+            <div class="font-bold text-3xl italic text-center">
+              Akad Nikah & Resepsi
+            </div>
+            <div
+              class="w-full my-5 flex flex-col justify-center items-center text-base font-semibold"
+            >
+              <p>Selasa, 07 November 2023</p>
+              <p>Pukul 09.00 s.d Selesai</p>
+              <p>Kp. Maniis RT 04 RW 06 Desa Cisalak</p>
+              <p>Kec. Cisalak Kab. Subang</p>
+            </div>
+
+            
+              </div>
+
+              
+            <!-- lokasi -->
+            <div class="w-full mt-5 bg-white rounded-xl py-20">
+              <div
+              class="flex justify-center flex-col items-center w-full"
+            >
+
+            <div class="font-bold text-4xl italic text-center">
+              Lokasi
+            </div>
+              <iframe
+                class="rounded-2xl px-5 w-full mt-5"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3962.449373239634!2d107.7777333749946!3d-6.714886693280942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDInNTMuNiJTIDEwN8KwNDYnNDkuMSJF!5e0!3m2!1sen!2sid!4v1698674132904!5m2!1sen!2sid"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <a
+                href="https://www.google.com/maps?q=-6.7148867,107.7803083"
+                ><button
+                  class="px-10 py-2 bg-orange-500 mt-7 text-white font-semibold rounded-lg hover:bg-blue-400 duration-200 ease-in-out"
+                >
+                  Buka Map
+                </button></a
+              >
+
+            
+
+            </div>
+          
+         
+            </div>
+            <div class="w-full bg-white rounded-xl mt-5 py-5">
+              <div class="mt-10 flex flex-col justify-center items-center mb-10">
+                <p class="text-4xl font-bold italic py-3">Gift</p>
+                <div class="w-20 bg-cover h-10 bg-black mb-2" style="background-image: url(download.png);"></div>
+                <p class="font-semibold" id="rekening">1730010903228</p>
+                <p>a.n HANIFAH RUPJANAHNUR</p>
+                <button class="bg-blue-500 px-4 py-1 text-white rounded-lg my-4" onclick="copyToClipboard()">Salin Rekening</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      window.onload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+
+    <script>
+      function copyToClipboard() {
+        var rekeningText = document.getElementById("rekening");
+        var textArea = document.createElement("textarea");
+
+        textArea.value = rekeningText.textContent;
+
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+
+        alert("Rekening telah disalin: " + rekeningText.textContent);
+      }
+    </script>
+
+    <script src="count.js"></script>
 
     <script src="lock.js"></script>
   </body>

@@ -1,3 +1,4 @@
+// Rest of your code
 const scrollButton = document.getElementById("scrollButton");
 const backgroundMusic = document.getElementById("backgroundMusic");
 
