@@ -11,9 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body
-    class="overflow-hidden scroll-smooth bg-green-300 text-gray-500"
+    class="overflow-auto scroll-smooth bg-green-300 text-gray-500"
     style="font-family: 'Poppins', sans-serif"
   >
     <audio
@@ -73,10 +74,10 @@
       <div class="w-[360px]" id="yoga">
         <div
           style="background-image: url(cf9958e13bb6673a9191049b8767ad32.jpg)"
-          class="w-full h-[800px] flex flex-col justify-center items-center bg-center bg-cover px-4"
+          class="w-full h-[800px] flex flex-col justify-center items-center bg-center bg-cover px-4 "
         >
-        <p class="font-bold text-black">Ar-Rum:21</p>
-          <p class="text-center text-sm text-black p-[20px] pt-[50px]">
+        <p class="font-bold text-black" data-aos="fade-up"    data-aos-duration="2000">Ar-Rum:21</p>
+          <p class="text-center text-sm text-black p-[20px] pt-[50px]" data-aos="fade-up" data-aos-duration="2000">
             Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
             pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
             dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
@@ -94,16 +95,16 @@
               style="
                 background-image: url(COWO.jpg);
               "
-              class="w-[200px] h-[300px] bg-red-300 bg-center bg-contain mt-[-70px] rounded-3xl"
+              class="w-[200px] h-[300px] bg-red-300 bg-center bg-contain mt-[-70px] rounded-3xl" data-aos="zoom-in" data-aos-duration="2000"
             ></div>
             <h1
               style="font-family: 'Dancing Script', cursive"
-              class="font-bold text-4xl mb-4 mt-8">
+              class="font-bold text-4xl mb-4 mt-8" data-aos="fade-right">
               Hanifah Rupjanahnur
             </h1>
             <div>
-              <h2 class="text-sm italic" >Putra ke-4 dari</h2>
-              <h2 class="text-sm italic">Bpk Ma'rup (Alm) & Ibu Ikah (Almh)</h2>
+              <h2 class="text-sm italic" data-aos="fade-right">Putra ke-4 dari</h2>
+              <h2 class="text-sm italic" data-aos="fade-right">Bpk Ma'rup (Alm) & Ibu Ikah (Almh)</h2>
             </div>
 
             <div class="flex flex-col items-end mt-12">
@@ -111,20 +112,20 @@
                 style="
                   background-image: url(CEWE.jpg);
                 "
-                class="w-[200px] h-[300px] bg-black bg-center bg-contain rounded-3xl" 
+                class="w-[200px] h-[300px] bg-black bg-center bg-contain rounded-3xl" data-aos="zoom-in" data-aos-duration="2000"
               ></div>
               <h1
                 style="font-family: 'Dancing Script', cursive"
                 class="font-bold text-4xl mb-4 mt-8"
-            
+                data-aos="fade-right"
               >
                 Nita Royani
               </h1>
-              <h2 class="text-sm italic" >Putri Pertama dari</h2>
-              <h2 class="text-sm italic" >
+              <h2 class="text-sm italic" data-aos="fade-right">Putri Pertama dari</h2>
+              <h2 class="text-sm italic" data-aos="fade-right">
                 Bpk Nana Sahroni (Alm) &
               </h2>
-              <h2 class="text-sm italic" >
+              <h2 class="text-sm italic" data-aos="fade-right">
                 Ibu Nunung Nurhayati
               </h2>
             </div>
@@ -249,6 +250,12 @@
     </script>
 
     <script src="count.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  AOS.init();
+</script>
 
     <script src="lock.js"></script>
 
